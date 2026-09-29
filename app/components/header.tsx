@@ -1,5 +1,5 @@
 import type { HTMLAttributes, PropsWithChildren } from "react";
-import { FullLogo, LogoImage, LogoName } from "./logo";
+import { FullLogo } from "./logo";
 import { ViewAvailabilityButton } from "./view-availability-button";
 
 export function Header({
