@@ -14,7 +14,7 @@ export default function () {
     <main>
       <title>Dahlia & Cedar | Garden Apartment in Coeur d'Alene</title>
       <Header>
-        <HeaderTag href="#apartment">The Stay </HeaderTag>
+        <HeaderTag href="#apartment">The Apartment</HeaderTag>
         <HeaderTag href="#garden">The Garden</HeaderTag>
         <HeaderTag href="#about">About Us</HeaderTag>
         <HeaderTag href="#explore">Explore Coeur d'Alene</HeaderTag>
