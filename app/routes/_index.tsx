@@ -1,12 +1,11 @@
 import { AboutUsSection } from "~/components/about-us-section";
+import { ApartmentSection } from "~/components/apartment-section";
 import { ConnectSection } from "~/components/connect-section";
-import { ExploreSection } from "~/components/explore-section";
 import { FAQSection } from "~/components/faq-section";
 import { Footer } from "~/components/footer";
 import { GardenSection } from "~/components/garden-section";
 import { Header } from "~/components/header";
 import { HeaderTag } from "~/components/header-link";
-import { ApartmentSection } from "~/components/apartment-section";
 import { BannerSection } from "~/components/stay-section";
 
 export default function () {
@@ -25,7 +24,6 @@ export default function () {
       <ApartmentSection />
       <GardenSection />
       <AboutUsSection />
-      <ExploreSection />
       <FAQSection />
       <ConnectSection />
       <Footer />
