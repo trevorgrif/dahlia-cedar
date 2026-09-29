@@ -9,7 +9,7 @@ export function Header({
   return (
     <header
       {...rest}
-      className="z-10 sticky top-0 h-16 bg-primary-2 py-4 px-8 flex justify-center gap-8 items-center border-b-2 border-accent-2"
+      className="z-10 sticky top-0 h-16 bg-primary-2 py-4 px-8 flex justify-center gap-8 items-center border-b-4 border-accent-2"
     >
       <FullLogo styling={{ container: "mr-auto" }} />
       {children}
