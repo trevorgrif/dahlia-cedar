@@ -16,7 +16,6 @@ export default function () {
         <HeaderTag href="#apartment">The Apartment</HeaderTag>
         <HeaderTag href="#garden">The Garden</HeaderTag>
         <HeaderTag href="#about">About Us</HeaderTag>
-        <HeaderTag href="#explore">Explore Coeur d'Alene</HeaderTag>
         <HeaderTag href="#faq">FAQ</HeaderTag>
         <HeaderTag href="#connect">Connect With Us</HeaderTag>
       </Header>
