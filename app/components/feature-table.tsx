@@ -16,7 +16,7 @@ export function FeatureTable() {
           <DoorOpen className="size-5 text-accent-1" />
         </FeatureIcon>
         <FeatureAction>Arrive</FeatureAction>
-        <FeatureHeader>Private Description</FeatureHeader>
+        <FeatureHeader>Private Entrance</FeatureHeader>
         <FeatureDescription>
           Reserved parking and a separate walkway to the apartment
         </FeatureDescription>
