@@ -3,25 +3,27 @@ import { ConnectSection } from "~/components/connect-section";
 import { ExploreSection } from "~/components/explore-section";
 import { FAQSection } from "~/components/faq-section";
 import { Footer } from "~/components/footer";
+import { GardenSection } from "~/components/garden-section";
 import { Header } from "~/components/header";
 import { HeaderTag } from "~/components/header-link";
-import { OverviewSection } from "~/components/overview-section";
-import { StaySection } from "~/components/stay-section";
+import { ApartmentSection } from "~/components/apartment-section";
+import { BannerSection } from "~/components/stay-section";
 
 export default function () {
   return (
     <main>
       <title>Dahlia & Cedar | Garden Apartment in Coeur d'Alene</title>
       <Header>
-        <HeaderTag href="#stay">The Stay </HeaderTag>
-        <HeaderTag href="#overview">The Garden</HeaderTag>
+        <HeaderTag href="#apartment">The Stay </HeaderTag>
+        <HeaderTag href="#garden">The Garden</HeaderTag>
         <HeaderTag href="#about">About Us</HeaderTag>
         <HeaderTag href="#explore">Explore Coeur d'Alene</HeaderTag>
         <HeaderTag href="#faq">FAQ</HeaderTag>
         <HeaderTag href="#connect">Connect With Us</HeaderTag>
       </Header>
-      <StaySection />
-      <OverviewSection />
+      <BannerSection />
+      <ApartmentSection />
+      <GardenSection />
       <AboutUsSection />
       <ExploreSection />
       <FAQSection />
