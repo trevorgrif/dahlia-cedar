@@ -1,3 +1,4 @@
+import { Carousel } from "./carousel/carousel-context";
 import { FeatureTable } from "./feature-table";
 import { H2 } from "./header-2";
 import { SectionSmallHeader } from "./section-small-header";
@@ -22,7 +23,26 @@ export function ApartmentSection() {
           <FeatureTable />
           <ViewAvailabilityButton className="w-fit text-neutral" />
         </span>
-        <img src="/photos/balcony.jpg" />
+        <Carousel>
+          <Carousel.Slider>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/apartment/windows.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/apartment/tv.jpg"
+                className="w-full h-full object-cover"
+              />
+            </Carousel.Slide>
+          </Carousel.Slider>
+        </Carousel>
       </div>
     </section>
   );

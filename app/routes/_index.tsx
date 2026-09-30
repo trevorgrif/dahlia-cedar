@@ -6,7 +6,7 @@ import { Footer } from "~/components/footer";
 import { GardenSection } from "~/components/garden-section";
 import { Header } from "~/components/header";
 import { HeaderTag } from "~/components/header-link";
-import { BannerSection } from "~/components/stay-section";
+import { BannerSection } from "~/components/banner-section";
 
 export default function () {
   return (

@@ -21,7 +21,7 @@ export function AboutUsSection() {
           </div>
         </div>
       </div>
-      <img src="/photos/selfie.jpg" />
+      <img src="/photos/selfie.jpg" className="w-full h-full object-cover" />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import { Carousel } from "./carousel/carousel-context";
 import { H2 } from "./header-2";
 import { SectionSmallHeader } from "./section-small-header";
 
@@ -16,9 +17,51 @@ export function GardenSection() {
           beneath the trees.
         </div>
       </div>
-      <div className="grid grid-cols-[65%_35%] h-160 overflow-clip">
-        <img src="/photos/kitchen.jpg" />
-        <img src="/photos/entrance_2.jpg" />
+      <div className="h-220 w-full overflow-clip">
+        <Carousel>
+          <Carousel.Slider>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/garden/flowers_1.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/garden/flowers_2.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/garden/pond.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/garden/sauna.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/photos/garden/spa.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+          </Carousel.Slider>
+        </Carousel>
       </div>
     </section>
   );

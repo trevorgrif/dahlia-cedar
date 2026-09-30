@@ -16,6 +16,8 @@
   --color-neutral: #fefae0;
   --color-accent-1: #dda15e;
   --color-accent-2: #bd8a27;
+
+  --header: calc(var(--spacing) * 20);
 }
 
 html,
