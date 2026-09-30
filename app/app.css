@@ -1,18 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   --default-font-family: var(--font-sans);
   --default-mono-font-family: var(--font-mono);
   --font-georgia: Georgia;
 
   --color-primary-1: #606c38;
-  --color-primary-2: #283618;
+  --color-primary-2: #123524;
   --color-neutral: #fefae0;
   --color-accent-1: #dda15e;
-  --color-accent-2: #bc6c25;
-
+  --color-accent-2: #bd8a27;
 }
 
 html,

@@ -5,7 +5,7 @@ import { ViewAvailabilityButton } from "./view-availability-button";
 
 export function ApartmentSection() {
   return (
-    <section id="apartment" className="">
+    <section id="apartment" className="bg-white">
       <div className="grid grid-cols-[55%_45%]">
         <span className="outline flex flex-col gap-8 justify-center p-16">
           <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>

@@ -5,12 +5,12 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function FAQSection() {
   return (
-    <section id="faq" className="grid grid-cols-2 p-32 bg-amber-50">
+    <section id="faq" className="grid grid-cols-2 p-32 bg-[#fff8e9]">
       <div className="flex flex-col gap-8">
         <SectionSmallHeader>Good to know</SectionSmallHeader>
-        <H2>Frequently asked questions.</H2>
+        <H2 styling={{ container: "text-5xl" }}>Frequently asked questions.</H2>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <Details>
           <Summary>Is the apartment private</Summary>
           <Content>
@@ -67,7 +67,7 @@ export function FAQSection() {
 
 function Details({ children }: PropsWithChildren) {
   return (
-    <details className="group flex flex-col gap-4 hover:cursor-pointer [interpolate-size:allow-keywords] [&::details-content]:h-0 [&::details-content]:overflow-hidden [&::details-content]:opacity-0 [&::details-content]:transition-[height,opacity,content-visibility] [&::details-content]:duration-300 [&::details-content]:ease-in-out [&::details-content]:transition-discrete open:[&::details-content]:h-auto open:[&::details-content]:opacity-100 motion-reduce:[&::details-content]:transition-none">
+    <details className="group flex flex-col gap-4 hover:cursor-pointer [interpolate-size:allow-keywords] details-content:h-0 details-content:overflow-hidden details-content:opacity-0 details-content:transition-[height,opacity,content-visibility] details-content:duration-300 details-content:ease-in-out details-content:transition-discrete open:details-content:h-auto open:details-content:opacity-100 motion-reduce:details-content:transition-none">
       {children}
     </details>
   );
@@ -75,11 +75,11 @@ function Details({ children }: PropsWithChildren) {
 
 function Summary({ children }: PropsWithChildren) {
   return (
-    <summary className="flex list-none items-center justify-between gap-4 font-medium [&::-webkit-details-marker]:hidden">
+    <summary className="text-black flex list-none items-center justify-between gap-4 text-lg font-georgia [&::-webkit-details-marker]:hidden">
       <span>{children}</span>
       <ChevronDown
         aria-hidden="true"
-        className="size-5 shrink-0 transition-transform duration-300 ease-in-out group-open:rotate-180 motion-reduce:transition-none"
+        className="size-5 shrink-0 transition-transform duration-300 ease-in-out group-open:rotate-180 motion-reduce:transition-none text-accent-2"
       />
     </summary>
   );

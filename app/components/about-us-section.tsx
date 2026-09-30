@@ -3,11 +3,11 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function AboutUsSection() {
   return (
-    <section id="about" className="grid grid-cols-2">
+    <section id="about" className="grid grid-cols-2 bg-white">
       <div className="flex flex-col gap-8 p-32 justify-center">
         <SectionSmallHeader>About Us</SectionSmallHeader>
         <H2>Thoughtful hospitality, kept simple.</H2>
-        <div className="flex flex-col gap-8 text-neutral-400">
+        <div className="flex flex-col gap-8 text-neutral-600">
           <div>
             We love sharing our little corner of Coeur d’Alene and genuinely
             enjoy meeting our guests. We’re always happy to say hello, share

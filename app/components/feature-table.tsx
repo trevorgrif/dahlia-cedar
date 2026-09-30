@@ -94,7 +94,7 @@ function FeatureDescription({ children }: PropsWithChildren) {
 function FeatureCard({ children }: PropsWithChildren) {
   return (
     <div className="border-primary-1/25 border flex flex-col gap-3 p-4 relative">
-      <div className="absolute top-0 left-0 w-16 h-px bg-accent-2" />
+      <div className="absolute top-0 left-0 w-16 h-0.5 bg-accent-2" />
       {children}
     </div>
   );

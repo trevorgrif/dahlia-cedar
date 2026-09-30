@@ -23,8 +23,11 @@ export function InputGroup({
 }) {
   const _styling = {
     container: cn("flex flex-col gap-2", styling.container),
-    label: cn("font-medium", styling.label),
-    input: cn("outline outline-accent-1/70 p-2", styling.input),
+    label: cn("font-medium text-black", styling.label),
+    input: cn(
+      "outline outline-accent-2/70 p-2 placeholder:text-neutral-400",
+      styling.input,
+    ),
   };
 
   return (
