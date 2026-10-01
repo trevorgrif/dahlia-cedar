@@ -18,10 +18,10 @@ export function LogoImage({
 
 export function LogoName() {
   return (
-    <div className="flex flex-col gap-px text-white tracking-widest font-georgia">
+    <div className="flex flex-col gap-px text-black tracking-widest font-georgia">
       <div className="flex items-baseline gap-1 text-sm">
         <span>DAHLIA</span>
-        <span className="text-primary-2">&</span>
+        <span className="text-accent-2">&</span>
         <span>CEDAR</span>
       </div>
       <div className="text-xs">HOSPITALITY</div>
