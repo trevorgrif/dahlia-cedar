@@ -5,7 +5,10 @@ export function ConnectForm() {
     <div className="bg-white p-4 flex flex-col gap-8">
       <div className="grid grid-cols-2 gap-4">
         <InputGroup name="name" options={{ label: "Your Name" }} />
-        <InputGroup name="email" options={{ label: "Email Address" }} />
+        <InputGroup
+          name="email"
+          options={{ label: "Email Address", type: "email" }}
+        />
         <InputGroup
           name="date"
           options={{

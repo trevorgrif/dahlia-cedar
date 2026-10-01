@@ -3,6 +3,7 @@ import { cn } from "cn";
 interface InputGroupOptions {
   label?: string;
   placeholder?: string;
+  type?: string;
 }
 
 interface InputGroupStyling {
@@ -13,7 +14,7 @@ interface InputGroupStyling {
 
 export function InputGroup({
   name,
-  options: { label, placeholder } = {},
+  options: { label, placeholder, type } = {},
   styling = {},
 }: {
   name: string;
@@ -25,7 +26,7 @@ export function InputGroup({
     container: cn("flex flex-col gap-2", styling.container),
     label: cn("font-medium text-black", styling.label),
     input: cn(
-      "outline outline-accent-2/70 p-2 placeholder:text-neutral-400",
+      "outline outline-accent-2/70 p-2 placeholder:text-neutral-400 text-black rounded",
       styling.input,
     ),
   };
@@ -40,6 +41,7 @@ export function InputGroup({
         name={name}
         id={name}
         placeholder={placeholder}
+        type={type}
       />
     </div>
   );
