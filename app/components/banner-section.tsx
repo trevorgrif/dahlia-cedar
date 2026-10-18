@@ -23,6 +23,38 @@ export function BannerSection() {
               className="object-cover size-full"
             />
           </Carousel.Slide>
+          <Carousel.Slide
+            styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+          >
+            <img
+              src="/photos/landing/garden_1.png"
+              className="object-cover size-full"
+            />
+          </Carousel.Slide>
+          <Carousel.Slide
+            styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+          >
+            <img
+              src="/photos/landing/garden_2.jpg"
+              className="object-cover size-full"
+            />
+          </Carousel.Slide>
+          <Carousel.Slide
+            styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+          >
+            <img
+              src="/photos/landing/hottub.jpg"
+              className="object-cover size-full"
+            />
+          </Carousel.Slide>
+          <Carousel.Slide
+            styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+          >
+            <img
+              src="/photos/landing/windows.jpg"
+              className="object-cover size-full"
+            />
+          </Carousel.Slide>
         </Carousel.Slider>
       </Carousel>
 
