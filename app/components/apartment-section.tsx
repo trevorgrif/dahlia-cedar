@@ -29,7 +29,7 @@ export function ApartmentSection() {
               styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
             >
               <img
-                src="/photos/apartment/windows.jpg"
+                src="/public/photos/apartment/balcony_1.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
@@ -37,8 +37,72 @@ export function ApartmentSection() {
               styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
             >
               <img
-                src="/photos/apartment/tv.jpg"
-                className="w-full h-full object-cover"
+                src="/public/photos/apartment/balcony_2.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/balcony_3.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/bathroom_1.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/bathroom_2.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/living_room_1.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/living_room_2.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/living_room_3.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/living_room_4.jpg"
+                className="w-full h-full object-fill"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+            >
+              <img
+                src="/public/photos/apartment/shelves.jpg"
+                className="w-full h-full object-fill"
               />
             </Carousel.Slide>
           </Carousel.Slider>
