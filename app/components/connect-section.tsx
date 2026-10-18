@@ -4,7 +4,7 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function ConnectSection() {
   return (
-    <section id="connect">
+    <section id="connect" className="shrink scroll-mt-[var(--header)]">
       <div className="p-32 grid grid-cols-2 gap-8 bg-[#efdcb6]">
         <div className="flex flex-col justify-center gap-8">
           <SectionSmallHeader>Connect with us</SectionSmallHeader>

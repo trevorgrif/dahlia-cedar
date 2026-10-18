@@ -6,9 +6,12 @@ import { ViewAvailabilityButton } from "./view-availability-button";
 
 export function ApartmentSection() {
   return (
-    <section id="apartment" className="bg-white">
-      <div className="grid grid-cols-[55%_45%]">
-        <span className="outline flex flex-col gap-8 justify-center p-16">
+    <section
+      id="apartment"
+      className="bg-white shrink scroll-mt-[var(--header)]"
+    >
+      <div className="grid grid-cols-[55%_45%] ">
+        <span className="flex flex-col gap-8 justify-center p-16">
           <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>
           <div className="flex flex-col text-4xl">
             <H2>Thoughful comfort.</H2>
@@ -26,82 +29,102 @@ export function ApartmentSection() {
         <Carousel>
           <Carousel.Slider>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/balcony_1.jpg"
+                src="/photos/apartment/balcony_1.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/balcony_2.jpg"
+                src="/photos/apartment/balcony_2.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/balcony_3.jpg"
+                src="/photos/apartment/balcony_3.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/bathroom_1.jpg"
+                src="/photos/apartment/bathroom_1.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/bathroom_2.jpg"
+                src="/photos/apartment/bathroom_2.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/living_room_1.jpg"
+                src="/photos/apartment/living_room_1.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/living_room_2.jpg"
+                src="/photos/apartment/living_room_2.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/living_room_3.jpg"
+                src="/photos/apartment/living_room_3.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/living_room_4.jpg"
+                src="/photos/apartment/living_room_4.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "min-h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "grow",
+              }}
             >
               <img
-                src="/public/photos/apartment/shelves.jpg"
+                src="/photos/apartment/shelves.jpg"
                 className="w-full h-full object-fill"
               />
             </Carousel.Slide>

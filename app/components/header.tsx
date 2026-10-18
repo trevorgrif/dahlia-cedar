@@ -11,7 +11,14 @@ export function Header({
       {...rest}
       className="z-10 sticky top-0 h-(--header) bg-white py-4 px-8 flex justify-center gap-12 items-center border-b-4 border-accent-2"
     >
-      <FullLogo styling={{ container: "mr-auto", icon: "size-32 mt-2" }} />
+      <div
+        className="mr-auto"
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
+        <FullLogo styling={{ container: "mr-auto", icon: "size-32 mt-2" }} />
+      </div>
       {children}
       <ViewAvailabilityButton className="ml-auto" />
     </header>

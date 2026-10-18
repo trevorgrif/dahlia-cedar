@@ -4,7 +4,10 @@ import { ViewAvailabilityButton } from "./view-availability-button";
 
 export function BannerSection() {
   return (
-    <section className="relative h-[calc(100dvh-var(--header)+4px)] w-full text-white overflow-clip">
+    <section
+      id="banner"
+      className="relative h-[calc(100dvh-var(--header)+4px)] w-full text-white overflow-clip"
+    >
       <Carousel>
         <Carousel.Slider>
           <Carousel.Slide

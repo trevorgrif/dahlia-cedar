@@ -10,7 +10,7 @@ import { BannerSection } from "~/components/banner-section";
 
 export default function () {
   return (
-    <main>
+    <main className="flex flex-col">
       <title>Dahlia & Cedar | Garden Apartment in Coeur d'Alene</title>
       <Header>
         <HeaderTag href="#apartment">The Apartment</HeaderTag>

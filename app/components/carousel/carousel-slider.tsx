@@ -3,12 +3,6 @@ import { CarouselContext } from "./carousel-context";
 
 export function CarouselSlider({ children }: PropsWithChildren) {
   const { setActive } = use(CarouselContext);
-  if (!Array.isArray(children)) return null;
-  const max = children.length;
-
-  const _children = children.map((child, index) =>
-    cloneElement(child, { ...child.props, index, key: index }),
-  );
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -17,6 +11,20 @@ export function CarouselSlider({ children }: PropsWithChildren) {
 
     return () => clearInterval(id);
   }, [setActive]);
+
+  const is_array = Array.isArray(children);
+  const max = is_array ? children.length : 1;
+  const _children = is_array
+    ? children.map((child, index) =>
+        cloneElement(child, { ...child.props, index, key: index }),
+      )
+    : [children].map((child, index) =>
+        cloneElement(child as any, {
+          ...(child as any).props,
+          index,
+          key: index,
+        }),
+      );
 
   return (
     <div className="relative grid overflow-hidden h-full">{_children}</div>
