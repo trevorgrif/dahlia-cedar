@@ -4,8 +4,11 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function GardenSection() {
   return (
-    <section id="garden" className="grid grid-cols-[45%_55%]">
-      <div className="h-[calc(100dvh-var(--header))] overflow-clip">
+    <section
+      id="garden"
+      className="grid grid-cols-[45%_55%] min-h-[calc(100dvh-var(--header)+4px)]"
+    >
+      <div className="h-full overflow-clip">
         <Carousel>
           <Carousel.Slider>
             <Carousel.Slide
