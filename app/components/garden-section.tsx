@@ -17,46 +17,116 @@ export function GardenSection() {
           beneath the trees.
         </div>
       </div>
-      <div className="h-220 w-full overflow-clip">
+      <div className="h-[calc(100dvh-var(--header))] w-full overflow-clip">
         <Carousel>
           <Carousel.Slider>
             <Carousel.Slide
-              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
             >
               <img
-                src="/photos/garden/flowers_1.jpg"
+                src="/public/photos/garden/flowers_1.jpg"
                 className="object-fill size-full"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
             >
               <img
-                src="/photos/garden/flowers_2.jpg"
+                src="/public/photos/garden/flowers_2.jpg"
                 className="object-fill size-full"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
             >
               <img
-                src="/photos/garden/pond.jpg"
+                src="/public/photos/garden/flowers_3.jpg"
                 className="object-fill size-full"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
             >
               <img
-                src="/photos/garden/sauna.jpg"
+                src="/public/photos/garden/flowers_4.jpg"
                 className="object-fill size-full"
               />
             </Carousel.Slide>
             <Carousel.Slide
-              styling={{ container: "h-[calc(100dvh-var(--header)+4px)]" }}
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
             >
               <img
-                src="/photos/garden/spa.jpg"
+                src="/public/photos/garden/flowers_5.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/flowers_6.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/flowers_7.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/pond.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/sauna.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/spa.jpg"
+                className="object-fill size-full"
+              />
+            </Carousel.Slide>
+            <Carousel.Slide
+              styling={{
+                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
+              }}
+            >
+              <img
+                src="/public/photos/garden/treehouse.jpg"
                 className="object-fill size-full"
               />
             </Carousel.Slide>

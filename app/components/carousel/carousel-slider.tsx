@@ -18,5 +18,7 @@ export function CarouselSlider({ children }: PropsWithChildren) {
     return () => clearInterval(id);
   }, [setActive]);
 
-  return <div className="relative grid overflow-hidden">{_children}</div>;
+  return (
+    <div className="relative grid overflow-hidden h-full">{_children}</div>
+  );
 }
