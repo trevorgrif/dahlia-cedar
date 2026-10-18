@@ -12,9 +12,10 @@ export function FAQSection() {
       <div className="grid grid-cols-2 p-32">
         <div className="flex flex-col gap-8">
           <SectionSmallHeader>Good to know</SectionSmallHeader>
-          <H2 styling={{ container: "text-5xl" }}>
-            Frequently asked questions.
-          </H2>
+          <div className="flex flex-col gap-2">
+            <H2 styling={{ container: "text-5xl" }}>Frequently asked</H2>
+            <H2 styling={{ container: "text-5xl" }}>questions.</H2>
+          </div>
         </div>
         <div className="flex flex-col gap-8">
           <Details>
