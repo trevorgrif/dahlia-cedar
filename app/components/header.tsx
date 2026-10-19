@@ -17,7 +17,7 @@ export function Header({
           window.scrollTo(0, 0);
         }}
       >
-        <FullLogo styling={{ container: "mr-auto", icon: "size-32 mt-2" }} />
+        <FullLogo styling={{ container: "mr-auto", icon: "size-32 mt-8" }} />
       </div>
       {children}
       <ViewAvailabilityButton className="ml-auto" />
