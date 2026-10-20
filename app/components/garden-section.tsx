@@ -6,122 +6,125 @@ export function GardenSection() {
   return (
     <section id="garden" className="shrink scroll-mt-[var(--header)]">
       <div className="grid grid-cols-[45%_55%] h-full">
-        <div className="h-full overflow-clip">
-          <Carousel>
-            <Carousel.Slider>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_1.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_2.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_3.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_4.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_5.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_6.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/flowers_7.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/pond.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/sauna.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/spa.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide
-                styling={{
-                  container: "grow",
-                }}
-              >
-                <img
-                  src="/photos/garden/treehouse.jpg"
-                  className="object-fill size-full"
-                />
-              </Carousel.Slide>
-            </Carousel.Slider>
-          </Carousel>
+        <div className="relative">
+          <div className="h-full asolute inset-0">
+            <Carousel>
+              <Carousel.Slider>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_3.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_4.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_5.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_6.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/flowers_7.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/pond.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/sauna.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/spa.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide
+                  styling={{
+                    container: "grow",
+                  }}
+                >
+                  <img
+                    src="/photos/garden/treehouse.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+              </Carousel.Slider>
+            </Carousel>
+          </div>
         </div>
+
         <div className="bg-primary-2 flex flex-col justify-center py-32 items-center gap-8">
           <SectionSmallHeader>Just beyond your door</SectionSmallHeader>
           <H2 styling={{ container: "text-white text-6xl" }}>

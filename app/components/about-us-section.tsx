@@ -5,8 +5,8 @@ import { SectionSmallHeader } from "./section-small-header";
 export function AboutUsSection() {
   return (
     <section id="about" className=" bg-white shrink scroll-mt-[var(--header)]">
-      <div className="grid grid-cols-2 h-full">
-        <div className="h-full flex flex-col gap-8 p-32 justify-center">
+      <div className="grid grid-cols-2">
+        <div className="h-fit flex flex-col gap-8 px-32 py-16 2xl:p-64 justify-center">
           <SectionSmallHeader>About Us</SectionSmallHeader>
           <H2>Thoughtful hospitality, kept simple.</H2>
           <div className="flex flex-col gap-8 text-neutral-600">
@@ -23,17 +23,20 @@ export function AboutUsSection() {
             </div>
           </div>
         </div>
-        <Carousel>
-          <Carousel.Slider>
-            <Carousel.Slide
-              styling={{
-                container: "max-h-full min-h-[calc(100dvh-var(--header)+4px)]",
-              }}
-            >
-              <img src="/photos/selfie.jpg" className="object-fill size-full" />
-            </Carousel.Slide>
-          </Carousel.Slider>
-        </Carousel>
+        <div className="relative">
+          <div className="h-full asolute inset-0">
+            <Carousel>
+              <Carousel.Slider>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/selfie.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+              </Carousel.Slider>
+            </Carousel>
+          </div>
+        </div>
       </div>
     </section>
   );

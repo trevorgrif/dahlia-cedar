@@ -10,8 +10,8 @@ export function ApartmentSection() {
       id="apartment"
       className="bg-white shrink scroll-mt-[var(--header)]"
     >
-      <div className="grid grid-cols-[55%_45%] ">
-        <span className="flex flex-col gap-8 justify-center p-16">
+      <div className="grid grid-cols-[1.2fr_1fr] max-h-min">
+        <span className="flex flex-col gap-8 justify-center px-16 py-8 h-fit 2xl:p-32">
           <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>
           <div className="flex flex-col text-4xl">
             <H2>Thoughful comfort.</H2>
@@ -26,110 +26,74 @@ export function ApartmentSection() {
           <FeatureTable />
           <ViewAvailabilityButton className="w-fit text-neutral" />
         </span>
-        <Carousel>
-          <Carousel.Slider>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/balcony_1.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/balcony_2.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/balcony_3.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/bathroom_1.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/bathroom_2.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/living_room_1.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/living_room_2.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/living_room_3.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/living_room_4.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-            <Carousel.Slide
-              styling={{
-                container: "grow",
-              }}
-            >
-              <img
-                src="/photos/apartment/shelves.jpg"
-                className="w-full h-full object-fill"
-              />
-            </Carousel.Slide>
-          </Carousel.Slider>
-        </Carousel>
+        <div className="relative">
+          <div className="h-full asolute inset-0">
+            <Carousel>
+              <Carousel.Slider>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/balcony_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/balcony_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/balcony_3.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/bathroom_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/bathroom_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/living_room_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/living_room_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/living_room_3.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/living_room_4.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/shelves.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+              </Carousel.Slider>
+            </Carousel>
+          </div>
+        </div>
       </div>
     </section>
   );
