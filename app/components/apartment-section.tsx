@@ -38,18 +38,6 @@ export function ApartmentSection() {
                 </Carousel.Slide>
                 <Carousel.Slide>
                   <img
-                    src="/photos/apartment/balcony_2.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/balcony_3.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
                     src="/photos/apartment/bathroom_1.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
@@ -57,6 +45,12 @@ export function ApartmentSection() {
                 <Carousel.Slide>
                   <img
                     src="/photos/apartment/bathroom_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/balcony_2.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>

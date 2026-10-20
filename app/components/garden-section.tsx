@@ -10,111 +10,79 @@ export function GardenSection() {
           <div className="h-full asolute inset-0">
             <Carousel>
               <Carousel.Slider>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_1.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_2.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
+                  <img
+                    src="/photos/garden/fire_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/garden/fire_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_3.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_4.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_5.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_6.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/flowers_7.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/pond.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/sauna.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/spa.jpg"
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
-                <Carousel.Slide
-                  styling={{
-                    container: "grow",
-                  }}
-                >
+                <Carousel.Slide>
                   <img
                     src="/photos/garden/treehouse.jpg"
                     className="absolute inset-0 size-full object-cover"
