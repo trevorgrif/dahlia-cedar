@@ -90,6 +90,24 @@ export function ApartmentSection() {
                     className="absolute inset-0 size-full object-cover"
                   />
                 </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/kitchen_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/bedroom_1.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <img
+                    src="/photos/apartment/bedroom_2.jpg"
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                </Carousel.Slide>
               </Carousel.Slider>
             </Carousel>
           </div>
