@@ -10,7 +10,7 @@ import type { PropsWithChildren } from "react";
 
 export function FeatureTable() {
   return (
-    <div className="self-stretch grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4">
       <FeatureCard>
         <FeatureIcon>
           <DoorOpen className="size-5 text-accent-1" />
@@ -67,14 +67,10 @@ function FeatureAction({ children }: PropsWithChildren) {
 
 function FeatureHeader({ children }: PropsWithChildren) {
   return (
-    <div className="text-black text-xl font-georgia font-medium tracking-wide">
+    <div className="text-black 2xl:text-xl font-georgia font-medium tracking-wide text-base md:text-sm">
       {children}
     </div>
   );
-}
-
-function FeatureDescription({ children }: PropsWithChildren) {
-  return <div className="text-sm text-primary-2">{children}</div>;
 }
 
 function FeatureCard({ children }: PropsWithChildren) {

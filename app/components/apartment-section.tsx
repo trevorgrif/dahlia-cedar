@@ -23,7 +23,7 @@ export function ApartmentSection() {
   return (
     <section id="apartment" className="bg-white shrink scroll-mt-(--header)">
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] md:max-h-min">
-        <span className="flex flex-col gap-6 md:gap-8 justify-center px-6 py-10 md:px-16 md:py-8 h-fit 2xl:p-32">
+        <span className="flex flex-col gap-6 md:gap-8 justify-center px-6 py-10 md:px-16 md:py-8 h-fit">
           <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>
           <div className="flex flex-col text-3xl md:text-4xl">
             <H2>Thoughtful comfort.</H2>
