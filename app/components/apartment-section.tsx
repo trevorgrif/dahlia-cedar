@@ -4,17 +4,29 @@ import { H2 } from "./header-2";
 import { SectionSmallHeader } from "./section-small-header";
 import { ViewAvailabilityButton } from "./view-availability-button";
 
+const photos = [
+  "balcony_1",
+  "bathroom_1",
+  "bathroom_2",
+  "balcony_2",
+  "living_room_1",
+  "living_room_2",
+  "living_room_3",
+  "living_room_4",
+  "shelves",
+  "kitchen_1",
+  "bedroom_1",
+  "bedroom_2",
+];
+
 export function ApartmentSection() {
   return (
-    <section
-      id="apartment"
-      className="bg-white shrink scroll-mt-[var(--header)]"
-    >
-      <div className="grid grid-cols-[1.2fr_1fr] max-h-min">
-        <span className="flex flex-col gap-8 justify-center px-16 py-8 h-fit 2xl:p-32">
+    <section id="apartment" className="bg-white shrink scroll-mt-(--header)">
+      <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] md:max-h-min">
+        <span className="flex flex-col gap-6 md:gap-8 justify-center px-6 py-10 md:px-16 md:py-8 h-fit 2xl:p-32">
           <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>
-          <div className="flex flex-col text-4xl">
-            <H2>Thoughful comfort.</H2>
+          <div className="flex flex-col text-3xl md:text-4xl">
+            <H2>Thoughtful comfort.</H2>
             <H2>Genuine hospitality.</H2>
           </div>
           <div className="text-neutral-600">
@@ -24,84 +36,24 @@ export function ApartmentSection() {
             within easy reach.
           </div>
           <FeatureTable />
-          <ViewAvailabilityButton className="w-fit text-neutral" />
+          <ViewAvailabilityButton className="w-full md:w-fit text-neutral" />
         </span>
-        <div className="relative">
-          <div className="h-full asolute inset-0">
+
+        {/* Mobile: photos on top with a fixed aspect ratio. Desktop: right column. */}
+        <div className="relative aspect-4/3 md:aspect-auto">
+          <div className="absolute inset-0">
             <Carousel>
               <Carousel.Slider>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/balcony_1.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/bathroom_1.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/bathroom_2.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/balcony_2.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/living_room_1.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/living_room_2.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/living_room_3.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/living_room_4.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/shelves.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/kitchen_1.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/bedroom_1.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <img
-                    src="/photos/apartment/bedroom_2.jpg"
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                </Carousel.Slide>
+                {photos.map((name) => (
+                  <Carousel.Slide key={name}>
+                    <img
+                      src={`/photos/apartment/${name}.jpg`}
+                      alt=""
+                      loading="lazy"
+                      className="absolute inset-0 size-full object-cover"
+                    />
+                  </Carousel.Slide>
+                ))}
               </Carousel.Slider>
             </Carousel>
           </div>

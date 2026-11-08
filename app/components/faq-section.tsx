@@ -5,16 +5,15 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function FAQSection() {
   return (
-    <section
-      id="faq"
-      className=" bg-[#fff8e9] shrink scroll-mt-[var(--header)]"
-    >
-      <div className="grid grid-cols-2 p-32">
-        <div className="flex flex-col gap-8">
+    <section id="faq" className="bg-[#fff8e9] shrink scroll-mt-(--header)">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-6 py-12 md:p-32">
+        <div className="flex flex-col gap-6 md:gap-8">
           <SectionSmallHeader>Good to know</SectionSmallHeader>
           <div className="flex flex-col gap-2">
-            <H2 styling={{ container: "text-6xl" }}>Frequently asked</H2>
-            <H2 styling={{ container: "text-6xl" }}>questions.</H2>
+            <H2 styling={{ container: "text-4xl md:text-6xl" }}>
+              Frequently asked
+            </H2>
+            <H2 styling={{ container: "text-4xl md:text-6xl" }}>questions.</H2>
           </div>
         </div>
         <div className="flex flex-col gap-8">
