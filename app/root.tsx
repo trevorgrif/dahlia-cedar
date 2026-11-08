@@ -29,7 +29,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:image" content="/photos/apartment/living_room_3" />
+        <meta
+          property="og:image"
+          content="/photos/apartment/living_room_3.jpg"
+        />
         <meta
           name="description"
           content="A private, peaceful garden apartment near downtown Coeur d’Alene, Idaho, with hot tub and sauna access."
