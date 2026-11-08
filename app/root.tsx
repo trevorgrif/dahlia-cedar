@@ -33,6 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           name="description"
           content="A private, peaceful garden apartment near downtown Coeur d’Alene, Idaho, with hot tub and sauna access."
         />
+        <link rel="icon" href="/photos/logo/icon.png" />
         <Meta />
         <Links />
       </head>
