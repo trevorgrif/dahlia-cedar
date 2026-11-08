@@ -4,7 +4,7 @@ import { SectionSmallHeader } from "./section-small-header";
 
 export function GardenSection() {
   return (
-    <section id="garden" className="shrink scroll-mt-[var(--header)]">
+    <section id="garden" className="scroll-mt-[var(--header)]">
       <div className="grid grid-cols-[45%_55%] h-full">
         <div className="relative">
           <div className="h-full asolute inset-0">
@@ -93,7 +93,7 @@ export function GardenSection() {
           </div>
         </div>
 
-        <div className="bg-primary-2 flex flex-col justify-center py-32 items-center gap-8">
+        <div className="bg-primary-2 flex flex-col justify-center py-32 items-center gap-8 h-[calc(100dvh-var(--header)+4px)]">
           <SectionSmallHeader>Just beyond your door</SectionSmallHeader>
           <H2 styling={{ container: "text-white text-6xl" }}>
             Room to slow down.
