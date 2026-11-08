@@ -13,8 +13,8 @@ export function FAQSection() {
         <div className="flex flex-col gap-8">
           <SectionSmallHeader>Good to know</SectionSmallHeader>
           <div className="flex flex-col gap-2">
-            <H2 styling={{ container: "text-5xl" }}>Frequently asked</H2>
-            <H2 styling={{ container: "text-5xl" }}>questions.</H2>
+            <H2 styling={{ container: "text-6xl" }}>Frequently asked</H2>
+            <H2 styling={{ container: "text-6xl" }}>questions.</H2>
           </div>
         </div>
         <div className="flex flex-col gap-8">
@@ -64,6 +64,17 @@ export function FAQSection() {
               <p>
                 The apartment is not suitable for children because of the
                 sleeping loft and stairs.
+              </p>
+            </Content>
+          </Details>
+          <Details>
+            <Summary>
+              How far is the apartment from downtown Coeur d'Alene?
+            </Summary>
+            <Content>
+              <p>
+                The apartment is a couple miles from downtown, taking only 10
+                mins by car.
               </p>
             </Content>
           </Details>
