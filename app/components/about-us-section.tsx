@@ -5,8 +5,8 @@ import { SectionSmallHeader } from "./section-small-header";
 export function AboutUsSection() {
   return (
     <section id="about" className="bg-white shrink scroll-mt-(--header)">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="h-fit flex flex-col gap-6 md:gap-8 px-6 py-10 md:px-32 md:py-16 2xl:p-64 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] md:max-h-min">
+        <div className="h-fit flex flex-col gap-6 md:gap-8 px-6 py-10 md:px-32 md:py-16 justify-center">
           <SectionSmallHeader>About Us</SectionSmallHeader>
           <H2 styling={{ container: "text-3xl md:text-5xl" }}>
             Thoughtful hospitality, kept simple.
