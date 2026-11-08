@@ -8,7 +8,9 @@ export function AboutUsSection() {
       <div className="grid grid-cols-2">
         <div className="h-fit flex flex-col gap-8 px-32 py-16 2xl:p-64 justify-center">
           <SectionSmallHeader>About Us</SectionSmallHeader>
-          <H2>Thoughtful hospitality, kept simple.</H2>
+          <H2 styling={{ container: "text-5xl" }}>
+            Thoughtful hospitality, kept simple.
+          </H2>
           <div className="flex flex-col gap-8 text-neutral-600">
             <div>
               We love sharing our little corner of Coeur d’Alene and genuinely
