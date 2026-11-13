@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import { Carousel } from "./carousel/carousel-context";
 import { H1 } from "./header-1";
 import { ViewAvailabilityButton } from "./view-availability-button";
+import { ReviewOverview } from "./review-overview";
 
 const SLIDE_HEIGHT = "h-[calc(100dvh-var(--header)+4px)]";
 
@@ -39,8 +41,12 @@ export function BannerSection() {
           A private garden escape for two in Coeur d'Alene, Idaho
         </div>
         <div className="flex flex-col">
-          <H1>Slow down, relax, and reset</H1>
+          <H1>Slow down,</H1>
+          <H1>relax, and reset</H1>
         </div>
+        <Suspense fallback={null}>
+          <ReviewOverview />
+        </Suspense>
         <ViewAvailabilityButton className="w-full md:w-fit bg-neutral" />
       </div>
     </section>

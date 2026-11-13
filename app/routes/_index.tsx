@@ -1,13 +1,25 @@
 import { AboutUsSection } from "~/components/about-us-section";
 import { ApartmentSection } from "~/components/apartment-section";
+import { BannerSection } from "~/components/banner-section";
 import { ConnectSection } from "~/components/connect-section";
 import { FAQSection } from "~/components/faq-section";
 import { Footer } from "~/components/footer";
 import { GardenSection } from "~/components/garden-section";
 import { Header } from "~/components/header";
 import { HeaderTag } from "~/components/header-link";
-import { BannerSection } from "~/components/banner-section";
 import { ReviewsSection } from "~/components/reviews-section";
+import { computeReviewMetrics } from "~/server/copmute-review-metrics";
+import { reviews } from "~/server/reviews";
+
+export type MainLoader = typeof loader;
+
+export async function loader() {
+  // getReviews();
+
+  const review_metrics = computeReviewMetrics();
+
+  return { review_metrics, reviews };
+}
 
 export default function () {
   return (
