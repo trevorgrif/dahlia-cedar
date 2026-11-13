@@ -7,6 +7,7 @@ import { GardenSection } from "~/components/garden-section";
 import { Header } from "~/components/header";
 import { HeaderTag } from "~/components/header-link";
 import { BannerSection } from "~/components/banner-section";
+import { ReviewsSection } from "~/components/reviews-section";
 
 export default function () {
   return (
@@ -15,6 +16,7 @@ export default function () {
       <Header>
         <HeaderTag href="#apartment">The Apartment</HeaderTag>
         <HeaderTag href="#garden">The Garden</HeaderTag>
+        <HeaderTag href="#reviews">Reviews</HeaderTag>
         <HeaderTag href="#about">About Us</HeaderTag>
         <HeaderTag href="#faq">FAQ</HeaderTag>
         <HeaderTag href="#connect">Connect With Us</HeaderTag>
@@ -22,6 +24,7 @@ export default function () {
       <BannerSection />
       <ApartmentSection />
       <GardenSection />
+      <ReviewsSection />
       <AboutUsSection />
       <FAQSection />
       <ConnectSection />

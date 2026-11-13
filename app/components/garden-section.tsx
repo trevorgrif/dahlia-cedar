@@ -43,19 +43,18 @@ export function GardenSection() {
         </div>
 
         <div className="bg-primary-2 flex flex-col justify-center items-center gap-6 md:gap-8 px-6 py-16 md:px-8 md:py-32 md:h-[calc(100dvh-var(--header)+4px)]">
-          <SectionSmallHeader>Just beyond your door</SectionSmallHeader>
+          <SectionSmallHeader>Just beyond your door,</SectionSmallHeader>
           <H2
             styling={{
               container: "text-white text-4xl md:text-6xl text-center",
             }}
           >
-            Room to slow down.
+            room to slow down.
           </H2>
           <div className="text-white w-full max-w-xl text-pretty text-center leading-7 md:leading-8">
-            You’re invited to explore the shared garden, gather around the fire
-            pit on the flagstone patio, climb up into the treehouse and enjoy
-            the hammock chairs, unwind in the hot tub or sauna, or find a quiet
-            bench beneath the trees.
+            Wander the garden paths, soak in the hot tub, warm up in the sauna,
+            linger by the fire, or climn up to the treehouse to sip your morning
+            coffee.
           </div>
         </div>
       </div>

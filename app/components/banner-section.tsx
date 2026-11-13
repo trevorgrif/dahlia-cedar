@@ -36,11 +36,10 @@ export function BannerSection() {
       {/* Mobile: full-width card pinned to the bottom. Desktop: floating card. */}
       <div className="absolute inset-x-4 bottom-6 md:inset-x-auto md:bottom-24 md:left-24 flex flex-col gap-3 md:gap-4 text-pretty bg-white/1 p-5 md:p-8 rounded-sm backdrop-blur-xs border border-accent-1/20">
         <div className="uppercase font-mono text-xs md:text-base">
-          A private garden stay in Coeur d'Alene Idaho
+          A private garden escape for two in Coeur d'Alene, Idaho
         </div>
         <div className="flex flex-col">
-          <H1>The Garden</H1>
-          <H1>Apartment</H1>
+          <H1>Slow down, relax, and reset</H1>
         </div>
         <ViewAvailabilityButton className="w-full md:w-fit bg-neutral" />
       </div>

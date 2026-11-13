@@ -24,16 +24,14 @@ export function ApartmentSection() {
     <section id="apartment" className="bg-white shrink scroll-mt-(--header)">
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] md:max-h-min">
         <span className="flex flex-col gap-6 md:gap-8 justify-center px-6 py-10 md:px-16 md:py-8 h-fit">
-          <SectionSmallHeader>The Garden Apartment</SectionSmallHeader>
+          <SectionSmallHeader>The Apartment</SectionSmallHeader>
           <div className="flex flex-col text-3xl md:text-4xl">
-            <H2>Thoughtful comfort.</H2>
-            <H2>Genuine hospitality.</H2>
+            <H2>A cozy place for</H2>
+            <H2>two to relax.</H2>
           </div>
           <div className="text-neutral-600">
-            Tucked behind our home, this private 500-square-foot guesthouse is
-            thoughtfully prepared for an easy, comfortable stay—with downtown
-            Coeur d’Alene, the lake, freeway access, and North Idaho trails all
-            within easy reach.
+            Everything you need for a quiet getaway, so you can settle in and
+            let the outside world wait.
           </div>
           <FeatureTable />
           <ViewAvailabilityButton className="w-full md:w-fit text-neutral" />
