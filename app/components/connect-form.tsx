@@ -42,7 +42,7 @@ function SubmitButton() {
   console.log(date, name, comment);
   return (
     <SendEmail
-      target="brenda.lakeside@gmail.com"
+      target="stay@dahliaandcedar.com"
       subject="Garden Apartment Inquiry"
       body={`Name: ${name} \nDate: ${date}\n\n${comment}`}
     >
