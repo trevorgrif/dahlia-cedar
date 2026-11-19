@@ -18,17 +18,17 @@ export function FAQSection() {
         </div>
         <div className="flex flex-col gap-8">
           <Details>
-            <Summary>Is the apartment private</Summary>
+            <Summary>Is the apartment private?</Summary>
             <Content>
               <p>
-                Yes. The Garden Apartment is an entire private guesthouse with
-                its own entrance. The backyard, garden, hot tub, sauna, fire pit
-                and treehouse are shared with your hosts.
+                Yes. The Garden Apartment is a private apartment with its own
+                entrance. The backyard, garden, hot tub, sauna, fire pit and
+                treehouse are shared with your hosts.
               </p>
             </Content>
           </Details>
           <Details>
-            <Summary>Where do guest park?</Summary>
+            <Summary>Where do guests park?</Summary>
             <Content>
               <p>
                 A reserved parking space is located in front of the wooden
@@ -49,7 +49,7 @@ export function FAQSection() {
             </Content>
           </Details>
           <Details>
-            <Summary>What time do I need to check-in and checkout?</Summary>
+            <Summary>What are the check-in and checkout times?</Summary>
             <Content>
               <p>
                 Check-in is at 3:00 PM or anytime afterward. Checkout is at
@@ -61,8 +61,8 @@ export function FAQSection() {
             <Summary>Is the apartment suitable for children?</Summary>
             <Content>
               <p>
-                The apartment is not suitable for children because of the
-                sleeping loft and stairs.
+                For safety reasons, we don't allow children. The loft and open
+                stairs just aren't made for little ones.
               </p>
             </Content>
           </Details>
@@ -72,8 +72,8 @@ export function FAQSection() {
             </Summary>
             <Content>
               <p>
-                The apartment is a couple miles from downtown, taking only 10
-                mins by car.
+                The apartment is a couple miles from downtown, about a 10-minute
+                drive.
               </p>
             </Content>
           </Details>
