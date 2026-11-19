@@ -49,6 +49,9 @@ export default function () {
   );
 }
 
+import { renderToStaticMarkup } from "react-dom/server";
+import { Email } from "~/components/emails/inquiry-email";
+
 export async function action({ request }: Route.ActionArgs) {
   const form = await request.json();
 
@@ -58,22 +61,40 @@ export async function action({ request }: Route.ActionArgs) {
   const name = String(form.name ?? "").trim();
   const email = String(form.email ?? "").trim();
   const date = String(form.date ?? "").trim();
+  const number = String(form.number ?? "").trim();
   const comment = String(form.comment ?? "").trim();
 
-  const errors: Record<string, string> = {};
-  if (!name) errors.name = "Name is required";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-    errors.email = "Valid email required";
-  if (!comment) errors.comment = "Message is required";
-  if (Object.keys(errors).length) return { ok: false, errors };
+  const html =
+    "<!DOCTYPE html>" +
+    renderToStaticMarkup(
+      <Email
+        name={name}
+        email={email}
+        date={date}
+        number={number}
+        comment={comment}
+      />,
+    );
+
+  // Plain-text fallback for clients that don't render HTML
+  const text = [
+    `New inquiry from ${name} <${email}>`,
+    date && `Approximate trip date: ${date}`,
+    number && `Phone: ${number}`,
+    "",
+    comment,
+  ]
+    .filter((line) => line !== undefined)
+    .join("\n");
 
   try {
     await transporter.sendMail({
-      from: `"Website Contact" <${process.env.SMTP_USER}>`,
+      from: `"Website Contact" <${process.env.CONTACT_TO}>`,
       to: process.env.CONTACT_TO,
       replyTo: `"${name.replace(/["\r\n]/g, "")}" <${email}>`,
       subject: `New inquiry from ${name.replace(/[\r\n]/g, " ")}`,
-      text: `From: ${name} <${email}>\n\n${comment}`,
+      text,
+      html,
     });
   } catch (err) {
     console.error("Email send failed", err);
@@ -86,15 +107,12 @@ export async function action({ request }: Route.ActionArgs) {
   return { ok: true };
 }
 
-export async function clientAction({
-  request,
-  serverAction,
-}: Route.ClientActionArgs) {
+export async function clientAction({ serverAction }: Route.ClientActionArgs) {
   const response = serverAction();
 
   toast.promise(response, {
-    loading: "Sending email",
+    loading: "Sending email...",
     error: "Failed to send an email",
-    success: "Email sent",
+    success: "Thank you! We'll be in touch soon.",
   });
 }
