@@ -1,12 +1,11 @@
 import { useRef } from "react";
 import { useLoaderData } from "react-router";
 import type { MainLoader } from "~/routes/_index";
+import { H2 } from "./header-2";
 import { useAutoScroll } from "./hooks/use-auto-scroll";
 import { ReviewCard } from "./review-card";
-import { SectionSmallHeader } from "./section-small-header";
-import { H2 } from "./header-2";
-import { Star } from "lucide-react";
 import { ReviewOverviewVerbose } from "./review-overview";
+import { SectionSmallHeader } from "./section-small-header";
 
 export function ReviewsSection() {
   const { reviews } = useLoaderData<MainLoader>();
@@ -25,17 +24,11 @@ export function ReviewsSection() {
           </div>
         </span>
 
-        <div
-          ref={scrollerRef}
-          className="flex gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] sm:px-6 [&::-webkit-scrollbar]:hidden"
-          style={{ WebkitOverflowScrolling: "touch" }}
-        >
-          {/* Rendered twice so the loop is seamless */}
-          <div className="flex shrink-0 gap-4">
-            {reviews.map((review) => (
-              <ReviewCard key={review.id} review={review} focusable={true} />
-            ))}
-          </div>
+        {/* Rendered twice so the loop is seamless */}
+        <div className=" flex justify-around w-full gap-4 flex-wrap">
+          {reviews.map((review) => (
+            <ReviewCard key={review.id} review={review} focusable={true} />
+          ))}
         </div>
         <ReviewOverviewVerbose />
       </div>
