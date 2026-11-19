@@ -17,7 +17,14 @@ export function AboutUsSection() {
             </H2>
           </div>
           <div className="flex flex-col gap-6 md:gap-8 text-neutral-600">
-            <div>We care for the details so you don't have to.</div>
+            <div>
+              Hello! We're Bobby and Brenda, your hosts. Since we live right
+              here, help is just a message away, and your privacy always comes
+              first. Come share a drink with us on the back patio, or keep to
+              yourselves. We're happy either way. The garden is a true labor of
+              love, especially in summer, when Bobby's dahlia obsession is in
+              full bloom!
+            </div>
           </div>
         </div>
 
