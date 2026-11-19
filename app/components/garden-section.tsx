@@ -4,18 +4,18 @@ import { SectionSmallHeader } from "./section-small-header";
 
 const photos = [
   "flowers_1",
-  "flowers_2",
+  "spa",
   "fire_1",
   "fire_2",
+  "sauna",
+  "treehouse",
+  "pond",
+  "flowers_2",
   "flowers_3",
   "flowers_4",
   "flowers_5",
   "flowers_6",
   "flowers_7",
-  "pond",
-  "sauna",
-  "spa",
-  "treehouse",
 ];
 
 export function GardenSection() {
@@ -53,7 +53,7 @@ export function GardenSection() {
           </H2>
           <div className="text-white w-full max-w-xl text-pretty text-center leading-7 md:leading-8">
             Wander the garden paths, soak in the hot tub, warm up in the sauna,
-            linger by the fire, or climn up to the treehouse to sip your morning
+            linger by the fire, or climb up to the treehouse to sip your morning
             coffee.
           </div>
         </div>
