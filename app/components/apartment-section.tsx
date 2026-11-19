@@ -5,18 +5,18 @@ import { SectionSmallHeader } from "./section-small-header";
 import { ViewAvailabilityButton } from "./view-availability-button";
 
 const photos = [
-  "balcony_1",
-  "bathroom_1",
-  "bathroom_2",
-  "balcony_2",
   "living_room_1",
   "living_room_2",
   "living_room_3",
   "living_room_4",
-  "shelves",
-  "kitchen_1",
   "bedroom_1",
   "bedroom_2",
+  "kitchen_1",
+  "shelves",
+  "balcony_1",
+  "balcony_2",
+  "bathroom_1",
+  "bathroom_2",
 ];
 
 export function ApartmentSection() {

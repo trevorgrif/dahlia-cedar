@@ -50,7 +50,7 @@ export function FeatureTable() {
         <FeatureIcon>
           <SunSnow className="size-5 text-accent-1" />
         </FeatureIcon>
-        <FeatureAction>Stay Comfortable</FeatureAction>
+        <FeatureAction>Comfort</FeatureAction>
         <FeatureHeader>Heating & Air Conditioning</FeatureHeader>
       </FeatureCard>
     </div>
@@ -59,7 +59,7 @@ export function FeatureTable() {
 
 function FeatureAction({ children }: PropsWithChildren) {
   return (
-    <div className="uppercase text-xs text-accent-2 font-mono tracking-widest">
+    <div className="uppercase text-xs text-accent-2 tracking-widest">
       {children}
     </div>
   );
