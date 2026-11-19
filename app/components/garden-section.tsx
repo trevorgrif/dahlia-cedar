@@ -46,12 +46,12 @@ export function GardenSection() {
           <SectionSmallHeader>Just beyond your door,</SectionSmallHeader>
           <H2
             styling={{
-              container: "text-white text-4xl md:text-6xl text-center",
+              container: "text-white text-center",
             }}
           >
             room to slow down.
           </H2>
-          <div className="text-white w-full max-w-xl text-pretty text-center leading-7 md:leading-8">
+          <div className="text-white w-full max-w-xl text-pretty text-center leading-7 md:leading-8 md:text-lg">
             Wander the garden paths, soak in the hot tub, warm up in the sauna,
             linger by the fire, or climb up to the treehouse to sip your morning
             coffee.

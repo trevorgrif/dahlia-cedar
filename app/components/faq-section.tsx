@@ -10,10 +10,8 @@ export function FAQSection() {
         <div className="flex flex-col gap-6 md:gap-8">
           <SectionSmallHeader>Good to know</SectionSmallHeader>
           <div className="flex flex-col gap-2">
-            <H2 styling={{ container: "text-4xl md:text-6xl" }}>
-              Frequently asked
-            </H2>
-            <H2 styling={{ container: "text-4xl md:text-6xl" }}>questions.</H2>
+            <H2>Frequently asked</H2>
+            <H2>questions.</H2>
           </div>
         </div>
         <div className="flex flex-col gap-8">

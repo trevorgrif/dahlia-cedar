@@ -29,7 +29,7 @@ export function ApartmentSection() {
             <H2>A cozy place for</H2>
             <H2>two to relax.</H2>
           </div>
-          <div className="text-neutral-600">
+          <div className="text-neutral-600 md:text-lg">
             Everything you need for a quiet getaway, so you can settle in and
             let the outside world wait.
           </div>

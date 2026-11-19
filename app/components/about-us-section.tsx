@@ -9,22 +9,16 @@ export function AboutUsSection() {
         <div className="flex flex-col gap-6 md:gap-8 px-6 py-10 md:px-32 md:py-16 justify-center">
           <SectionSmallHeader>About Us</SectionSmallHeader>
           <div className="flex flex-col gap-2">
-            <H2 styling={{ container: "text-3xl md:text-5xl" }}>
-              Thoughtful hospitality,
-            </H2>
-            <H2 styling={{ container: "text-3xl md:text-5xl" }}>
-              kept simple.
-            </H2>
+            <H2>Thoughtful hospitality,</H2>
+            <H2>kept simple.</H2>
           </div>
-          <div className="flex flex-col gap-6 md:gap-8 text-neutral-600">
-            <div>
-              Hello! We're Bobby and Brenda, your hosts. Since we live right
-              here, help is just a message away, and your privacy always comes
-              first. Come share a drink with us on the back patio, or keep to
-              yourselves. We're happy either way. The garden is a true labor of
-              love, especially in summer, when Bobby's dahlia obsession is in
-              full bloom!
-            </div>
+          <div className="flex flex-col gap-6 md:gap-8 text-neutral-600 md:text-lg">
+            Hello! We're Bobby and Brenda, your hosts. Since we live right here,
+            help is just a message away, and your privacy always comes first.
+            Come share a drink with us on the back patio, or keep to yourselves.
+            We're happy either way. The garden is a true labor of love,
+            especially in summer, when Bobby's dahlia obsession is in full
+            bloom!
           </div>
         </div>
 

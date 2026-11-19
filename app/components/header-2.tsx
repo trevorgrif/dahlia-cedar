@@ -14,7 +14,7 @@ export function H2({
   styling: { container = "" } = {},
 }: PropsWithChildren<H2Props>) {
   const _styling = {
-    container: cn("font-georgia text-4xl text-black", container),
+    container: cn("font-georgia text-4xl md:text-5xl text-black", container),
   };
   return <h2 className={_styling.container}>{children}</h2>;
 }
