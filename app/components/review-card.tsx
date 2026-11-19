@@ -3,7 +3,7 @@ import type { Review } from "~/server/get-reviews";
 export function ReviewCard({
   review: {
     text,
-    reviewer: { name, picture_url },
+    reviewer: { name },
     created_at,
     rating,
   },
@@ -23,14 +23,6 @@ export function ReviewCard({
       className="flex w-[80vw] max-w-sm shrink-0 flex-col gap-3 rounded-2xl border border-black/10 bg-white p-5 shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 sm:w-80"
     >
       <header className="flex items-center gap-3">
-        <img
-          src={picture_url}
-          alt=""
-          loading="lazy"
-          width={44}
-          height={44}
-          className="size-11 rounded-full object-cover"
-        />
         <div className="min-w-0">
           <p className="truncate font-medium text-black">{name}</p>
           <p className="text-sm text-neutral-500">{date}</p>

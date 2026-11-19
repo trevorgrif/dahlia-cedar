@@ -31,21 +31,11 @@ export function ReviewsSection() {
           style={{ WebkitOverflowScrolling: "touch" }}
         >
           {/* Rendered twice so the loop is seamless */}
-          {[0, 1].map((copy) => (
-            <div
-              key={copy}
-              className="flex shrink-0 gap-4"
-              aria-hidden={copy === 1 ? true : undefined}
-            >
-              {reviews.map((review) => (
-                <ReviewCard
-                  key={`${copy}-${review.id}`}
-                  review={review}
-                  focusable={copy === 0}
-                />
-              ))}
-            </div>
-          ))}
+          <div className="flex shrink-0 gap-4">
+            {reviews.map((review) => (
+              <ReviewCard key={review.id} review={review} focusable={true} />
+            ))}
+          </div>
         </div>
         <ReviewOverviewVerbose />
       </div>

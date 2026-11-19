@@ -36,15 +36,17 @@ export function ReviewOverviewVerbose() {
     maximumFractionDigits: 1,
   });
   return (
-    <div className="flex gap-2 items-center text-black px-6 py-8 md:px-16 md:py-4">
-      <Star className="fill-black size-4" />
-      {formatter.format(average_rating)}
-      <div className="flex items-baseline gap-1">
-        <div>from</div>
-        <div>{total_reviews}</div>
-        <div>Airbnb reviews</div>
+    <div className="flex-col sm:flex-row flex gap-2 items-center text-black px-6 py-8 md:px-16 md:py-4">
+      <div className="flex items-center gap-1">
+        <Star className="fill-black size-4" />
+        {formatter.format(average_rating)}
+        <div className="flex items-baseline gap-1">
+          <div>from</div>
+          <div>{total_reviews}</div>
+          <div>Airbnb reviews</div>
+        </div>
       </div>
-      <Dot />
+      <Dot className="invisible sm:visible" />
       <Link
         to={route_map._external.airbnb}
         className="underline"
