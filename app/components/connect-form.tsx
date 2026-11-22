@@ -24,7 +24,7 @@ export function ConnectForm() {
             <InputGroup
               name="name"
               options={{
-                label: "Your Name",
+                label: "Name",
                 register: methods.register,
                 options: {
                   required: "Name is required",
@@ -37,7 +37,7 @@ export function ConnectForm() {
               name="date"
               options={{
                 register: methods.register,
-                label: "Preferred stay dates",
+                label: "Travel Dates",
                 placeholder: "If you know them",
                 optional: true,
               }}
@@ -45,7 +45,7 @@ export function ConnectForm() {
             <InputGroup
               name="email"
               options={{
-                label: "Your Email",
+                label: "Email",
                 register: methods.register,
                 type: "email",
                 options: {
@@ -62,7 +62,7 @@ export function ConnectForm() {
             <InputGroup
               name="number"
               options={{
-                label: "Your Phone Number",
+                label: "Phone",
                 register: methods.register,
                 type: "tel",
                 optional: true,
