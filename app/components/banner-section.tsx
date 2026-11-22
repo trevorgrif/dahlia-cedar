@@ -41,8 +41,9 @@ export function BannerSection() {
           <H1>Slow down,</H1>
           <H1>relax, and reset.</H1>
         </div>
-        <div className="text-base md:text-lg">
-          A private garden escape for two in Coeur d'Alene, Idaho
+        <div className="text-base md:text-lg flex gap-1.5 flex-col sm:flex-row">
+          <div>A private garden escape for two in</div>
+          <div>Coeur d'Alene, Idaho</div>
         </div>
         <Suspense fallback={null}>
           <ReviewOverview />
