@@ -1,8 +1,7 @@
-import type { PropsWithChildren } from "react";
-import { InputAreaGroup, InputGroup } from "./input-group";
-import { FormProvider, useForm, useWatch } from "react-hook-form";
-import { useFetcher } from "react-router";
 import { cn } from "cn";
+import { FormProvider, useForm } from "react-hook-form";
+import { useFetcher } from "react-router";
+import { InputAreaGroup, InputGroup } from "./input-group";
 
 export function ConnectForm() {
   const methods = useForm();
@@ -61,7 +60,7 @@ export function ConnectForm() {
               }}
             />
             <InputGroup
-              name="phone"
+              name="number"
               options={{
                 label: "Your Phone Number",
                 register: methods.register,
