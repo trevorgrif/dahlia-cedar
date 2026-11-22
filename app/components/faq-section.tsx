@@ -36,7 +36,7 @@ export function FAQSection() {
             </Content>
           </Details>
           <Details>
-            <Summary>Can guest use the outdoor amenities?</Summary>
+            <Summary>Can guests use the outdoor amenities?</Summary>
             <Content>
               <p>
                 Yes. Guests are welcome to enjoy the hot tub, sauna, fire pit
