@@ -18,7 +18,7 @@ export function ConnectSection() {
         <div className="flex flex-col justify-center gap-6 md:gap-8">
           <SectionSmallHeader>Connect with us</SectionSmallHeader>
           <H2 styling={{ container: "text-white" }}>
-            Your garden escape is waiting
+            Your garden escape is waiting.
           </H2>
         </div>
         <ConnectForm />
