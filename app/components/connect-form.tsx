@@ -1,6 +1,6 @@
 import { cn } from "cn";
 import { FormProvider, useForm } from "react-hook-form";
-import { useFetcher } from "react-router";
+import { Link, useFetcher } from "react-router";
 import { InputAreaGroup, InputGroup } from "./input-group";
 
 export function ConnectForm() {
@@ -93,6 +93,15 @@ export function ConnectForm() {
             <button type="submit" className={_styling.container}>
               Send Email
             </button>
+            <span className="flex flex-col sm:flex-row gap-1 items-baseline ml-auto col-start-2">
+              <div>Prefer email? Write us at</div>
+              <Link
+                to="mailto:stay@dahliaandcedar.com?subject=The%20Garden%20Apartment%20Inquiry"
+                className="text-accent-1"
+              >
+                stay@dahliaandcedar.con
+              </Link>
+            </span>
           </div>
         </div>
       </form>
